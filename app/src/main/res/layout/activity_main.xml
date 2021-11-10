@@ -12,35 +12,44 @@
         android:id="@+id/sendOnChannelTwobtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
         android:text="SEND ON CHANNEL 2"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="476dp" />
+        app:layout_constraintStart_toStartOf="@+id/sendOnChannelOnebtn"
+        app:layout_constraintTop_toBottomOf="@+id/sendOnChannelOnebtn" />
 
     <EditText
         android:id="@+id/editTextMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="1dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:text="Message"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="252dp" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTitle" />
 
     <Button
         android:id="@+id/sendOnChannelOnebtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
         android:text="SEND ON CHANNEL 1"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="382dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMessage" />
 
     <EditText
         android:id="@+id/editTextTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:text="Title"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="188dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
