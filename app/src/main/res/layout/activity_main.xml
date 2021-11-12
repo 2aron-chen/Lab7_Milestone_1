@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="85dp"
         android:text="SEND ON CHANNEL 1"
+        android:onClick="sendOnChannel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextMessage" />
