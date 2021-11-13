@@ -8,21 +8,25 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="83dp">
 
-    <Button
-        android:id="@+id/sendOnChannelTwobtn"
+    <EditText
+        android:id="@+id/editTextTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="46dp"
-        android:text="SEND ON CHANNEL 2"
-        app:layout_constraintStart_toStartOf="@+id/sendOnChannelOnebtn"
-        app:layout_constraintTop_toBottomOf="@+id/sendOnChannelOnebtn" />
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginTop="72dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
@@ -34,23 +38,20 @@
         android:id="@+id/sendOnChannelOnebtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="85dp"
-        android:text="SEND ON CHANNEL 1"
+        android:layout_marginTop="96dp"
         android:onClick="sendOnChannel"
+        android:text="SEND ON CHANNEL 1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextMessage" />
 
-    <EditText
-        android:id="@+id/editTextTitle"
+    <Button
+        android:id="@+id/sendOnChannelTwobtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="188dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Title"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="48dp"
+        android:onClick="secondSendOnChannel"
+        android:text="SEND ON CHANNEL 2"
+        app:layout_constraintStart_toStartOf="@+id/sendOnChannelOnebtn"
+        app:layout_constraintTop_toBottomOf="@+id/sendOnChannelOnebtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
